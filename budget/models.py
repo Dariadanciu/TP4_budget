@@ -26,7 +26,7 @@ class Project(models.Model):
         new_budget_temp = budget_temp - expense_amount
 
         for expense in expense_list:
-             total_expense_amount += expense.amount
+             total_expense_amount += expense_amount
 
         # temporary solution, because the form currently only allows integer amounts
         total_expense_amount = int(total_expense_amount)
